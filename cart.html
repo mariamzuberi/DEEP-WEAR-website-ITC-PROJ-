@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="ss.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<div class="topnav" id="myTopnav">
+    <a href="home.html" >HOME</a>
+    <a href="login.html">LOGIN</a>
+    <a href="diamond.html">ABOUT US</a>
+    <a href="special.html">CATALOGUE</a>
+    <a href="cart.html" class="active"> CART </a>
+    <a href="contact.html">CONTACT </a>
+    <a href="admin.html">ADMIN</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<section class="sub-header">
+<section class="sub-header">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <h1 style="color: #D3B2A3" text-align:center"><font face="Comic sans MS" size="7">
+    SHOPPING CART</font><br><br><br><br>
+
+    <div class="shopping-cart">
+        <div class="column-labels">
+            <label class="product-details">Product</label>
+            <label class="product-price">Price</label>
+            <label class="product-quantity">Quantity</label>
+            <label class="product-removal">Remove</label>
+            <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="bg56.jpg" alt="pink dress">
+            </div>
+            <div class="product-details">
+                <div class="product-title"> Pink dress</div>
+                <p class="product-description"> My fav best pink dress.</p>
+            </div>
+            <div class="product-price">12.99</div>
+            <div class="product-quantity">
+                <input type="number" value="2" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">25.98</div>
+        </div>
+
+        <div class="product">
+            <div class="product-image">
+                <img src="bags.jpg" alt="bag" >
+            </div>
+            <div class="product-details">
+                <div class="product-title"> shoes</div>
+                <p class="product-description"> My fav bag </p>
+            </div>
+            <div class="product-price">45.99</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">45.99</div>
+        </div>
+         <div class="product">
+            <div class="product-image">
+                <img src="shoes.jpg" alt="shoes" >
+            </div>
+            <div class="product-details">
+                <div class="product-title"> shoes</div>
+                <p class="product-description"> My fav shoes</p>
+            </div>
+            <div class="product-price">45.99</div>
+            <div class="product-quantity">
+                <input type="number" value="1" min="1">
+            </div>
+            <div class="product-removal">
+                <button class="remove-product">
+                    Remove
+                </button>
+            </div>
+            <div class="product-line-price">45.99</div>
+        </div>
+
+        <div class="totals">
+            <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+            </div>
+            <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+            </div>
+            <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+            </div>
+            <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+            </div>
+        </div>
+
+        <button class="checkout">Checkout</button>
+    </div>
+    <script src="addtocart1.js"></script>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<section class="footer">
+   <div class="company">
+     <div class="restart">
+        <div class="footercum">
+          <h4><b><i>Company</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>About Us</i></b></a></li>
+             <li><a href="#"><b><i>Our Services</i></b></a></li>
+             <li><a href="#"><b><i>Privacy Policy</i></b></a></li><li>
+             <li><a href="#"><b><i>Affiliate Program</i></b></a></li>
+          </ul>
+        </div>
+        <div class="footercum">
+          <h4><b><i>Get Help</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>FAQ</i></b></a></li>
+             <li><a href="#"><b><i>Shipping</i></b></a></li>
+             <li><a href="#"><b><i>Returns</i></b></a></li>
+             <li><a href="#"><b><i>Order Status</i></b></a></li>
+             <li><a href="#"><b><i>Payment Options</i></b></a></li>
+          </ul>
+    </div>
+    <div class="footercum">
+          <h4><b><i>Online Shop</i></b></h4>
+          <ul>
+             <li><a href="home.html"><b><i> Long Frocks </i></b></a></li>
+             <li><a href="home.html"><b><i> Short Frocks </i></b></a></li>
+             <li><a href="diamond.html"><b><i> cod sets</i></b></a></li>
+             <li><a href="special.html"><b><i> Shoes </i></b> </a></li>
+             <li><a href="watches.html"><b><i>Jewellery </i></b></a></li>
+
+          </ul>
+</div>
+<div class="footercum">
+          <h4><b><i>Follow Us</i></b></h4>
+          <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+    </div>
+ </div>
+ </div>
+</section>
+</body>
+</html>

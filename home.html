@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style16.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<button onClick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="topnav" id="myTopnav">
+  <a href="home.html" class="active">HOME</a>
+    <a href="login.html">LOGIN</a>
+    <a href="diamond.html">ABOUT US</a>
+    <a href="special.html">CATALOGUE</a>
+    <a href="cart.html"> CART </a>
+    <a href="contact.html">CONTACT </a>
+    <a href="admin.html">ADMIN</a>
+ <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else{
+   x.className = "topnav";
+  }
+}
+</script>
+<section class="header">
+<div class="text-box">
+   <h1><b> DEEP WEAR</b> </h1>
+   <p>Elevate Your Style, Unleash Your Confidence – Where Fashion Meets Imagination!</p>
+   <a href="special.html" class="hero-btn"> Explore to know more </a></div>
+</section>
+
+
+<section class="course">
+<h1 style="color: #D3B2A3"><font face="Comic sans MS" size="7"><b><i></i> OUR SERVICES </font></i></b></h1>
+<div class="row">
+   <div class="course-col">
+<h3 style="color:black"> <font face="Comic sans MS" size="4"><b> Manufacturing </font></b></h3>
+<p style="color:black"> We offer a complete production and manufacturing service no matter the size of your brand or where you are located.</p>
+       <img src="manfacturing.jpg" height="200" width="200"></div>
+
+<div class="course-col">
+        <h3 style="color:black"><font face="Comic sans MS" size=" 4"><b> Sourcing </font></b> </h3>
+        <p style="color:black"> We can source suppliers,product,fabrics,and handle any type of research operations  needed for your fashion projects.  </p>
+        <img src="sourcing.jpg" height="200" width="200">
+</div>
+<div class="course-col">
+<h3 style="color:black"><font face="Comic sans MS" size="4"><b> Design </font></b> </h3>
+<p style="color:black">We have a hands-on approch to managing every aspect of the supply chain from concept to completion.Our in-housexreative department is also avaiable for all customers to use at any time.</p>
+    <img src="design.jpg" height=" 200" width="200" "></div>
+</section>
+<section class="campus">
+<h1 style="color: #D3B2A3"><font face="Comic sans MS" size="7"><b>PRODUCT TYPE</font></b></h1>
+<p style="color:black;font-size:16px">Our mission is to bring you an accessible and affordable way to bring your designs to life and get them to market. We unearth, craft, and share the stories of the most ambitious brands shaping the future, in the US, EUROPE, AU, NZ and beyond.</p>
+<div class="row">
+<div class="campus-col">
+    <img src="garments.jpg" style="width:400px; height:500px;">
+<div class="layer">
+<h3 style="color:white"><i><b>  Garments </i></b></h3>
+</div></div>
+<div class="campus-col">
+    <img src="bags.jpg" style="width:400px; height:500px;" /><div class="layer">
+<h3 style="color:white"><i><b>Bags </i></b></h3>
+</div></div>
+<div class="campus-col">
+    <img src="shoes.jpg" style="width:400px; height:500px;" /><h3 style="color:white"> <div class="layer"><h3 style="color:white"><i><b> Shoes</i></b> </h3>
+</div></div>
+</div>
+</section>
+
+
+
+<section class"facilities">
+<h1 style="text-align: center; color: #D3B2A3" ><font face="Comic sans MS" size="7"><b> TEXTILE FABRIC CONSULTANT</font></b></h1>
+<p style="color:black;text-align:center;font-size:16px">As Fabric consultants, We deal with an elaborately diverse portfolio of clients – International brands, labels, medium-sized manufacturers, and smaller niche start-ups companies – covering almost everything ranging from apparel, home furnishings, accessories, footwear to industrial fabrics, with a clear understanding and expertise of the latest technology, and commercial manufacturing processes.  </p>
+<div class="row">
+<div class="facilities-col">
+    <img src="global fabric.jpg"><h3 style="text-align:center;color:#333"> <i><b><u> Global Fabric Sourcing </u></b></i></h3>
+<p style="color:#000"> We provide our clients with an end to end service right from sourcing the yarns or fabrics to manufacturing of the final embroidered garments or panels. Our work spans across all areas of fashion and lifestyle fabrics.We can also offer customized textile surface developments like printing, dyeing, embroidery etc .
+</p></div>
+<div class="facilities-col">
+        <img src="fabric.jpg"><h3 style="text-align:center;;color:#333"> <i><b><u>Textile buying services</u> </b></i></h3>
+        <p style="color:black">
+                Our textile buying service spans across all fields of fashion from apparel to accessories to lifestyle products. Our team is well experienced in the Fabric buying field and knows all the right criteria to look out for while choosing the best fashion fabric suppliers and factories..
+        </p>
+</div>
+<div class="facilities-col">
+<img src="cotton.jpg"><br>
+<h3 style="text-align:center;color:#333" > <i><b><u>Fabric Manufacturing Made Seamless.</u> </b></i></h3>
+<p style="color:black">The creation of any design begins with choosing the right base materials.The right fabric can elevate a design and a bad fabric choice can be distracting. Sourcing fabrics is an important aspect of any range and can be the make or break factor of the collection. </p>
+</div>
+</div></section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+<section class="footer">
+   <div class="company">
+     <div class="restart">
+        <div class="footercum">
+          <h4><b>Company</b></h4>
+          <ul>
+             <li><a href="#"><b>About Us</b></a></li>
+             <li><a href="#"><b>Our Services</b></a></li>
+             <li><a href="#"><b>Privacy Policy</b></a></li><li>
+             <li><a href="#"><b>Affiliate Program</b></a></li>
+          </ul>
+        </div>
+        <div class="footercum">
+          <h4><b>Get Help</b></h4>
+          <ul>
+             <li><a href="#"><b>FAQ</b></a></li>
+             <li><a href="#"><b>Shipping</b></a></li>
+             <li><a href="#"><b>Returns</b></a></li>
+             <li><a href="#"><b>Order Status</b></a></li>
+             <li><a href="#"><b>Payment Options</b></a></li>
+          </ul>
+    </div>
+    <div class="footercum">
+          <h4><b>Online Shop</b></h4>
+          <ul>
+             <li><a href="home.html"><b><i> Long Frocks </i></b></a></li>
+             <li><a href="home.html"><b><i> Short Frocks </i></b></a></li>
+             <li><a href="diamond.html"><b><i> cod sets</i></b></a></li>
+             <li><a href="special.html"><b><i> Shoes </i></b> </a></li>
+             <li><a href="watches.html"><b><i>Jewellery </i></b></a></li>
+
+          </ul>
+</div>
+<div class="footercum">
+          <h4><b>Follow Us</b></h4>
+          <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+    </div>
+ </div>
+ </div>
+</section>
+</body>
+</html>
+
+
+

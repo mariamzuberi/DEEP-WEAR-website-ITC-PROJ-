@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style16.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+}
+
+.login-form {
+  max-width: 300px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+}
+
+.login-form h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.login-form label {
+  display: block;
+  font-weight: bold;
+}
+
+.login-form input[type="email"],
+.login-form input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.login-form button[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+}
+
+.login-form button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="topnav" id="myTopnav">
+     <a href="home.html">HOME</a>
+     <a href="login.html" class="active">LOGIN</a>
+    <a href="diamond.html">ABOUT US</a>
+    <a href="special.html">CATALOGUE</a>
+    <a href="cart.html"> CART </a>
+    <a href="contact.html">CONTACT</a>
+    <a href="admin.html">ADMIN</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<section class="sub-header">
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <section class="about-us"></section>
+</section>
+  <br><br><br><br><br><br><br>
+
+<section class="login-form">
+<h2>Login</h2>
+<form id="loginForm">
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  <label for="password">Password:</label>
+  <input type="password" id="password" name="password" required>
+  <button type="submit">Login</button>
+</form>
+</section>
+<script>
+document.getElementById('loginForm').addEventListener('submit', function(e) {
+  e.preventDefault();
+  
+  var email = this.email.value;
+  var password = this.password.value;
+  
+  var loggedInUser = { email: email, password: password };
+  localStorage.setItem('loggedInUser', JSON.stringify(loggedInUser));
+
+  // Record login event
+  var loginCount = localStorage.getItem('loginCount') || 0;
+  loginCount++;
+  localStorage.setItem('loginCount', loginCount);
+
+  // Save login information
+  var logins = JSON.parse(localStorage.getItem('logins')) || [];
+  logins.push(loggedInUser);
+  localStorage.setItem('logins', JSON.stringify(logins));
+
+  alert('You are logged in.');
+  window.location.href = 'home.html'; // Redirect to home page after login
+});
+</script>
+<br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+<section class="footer">
+   <div class="company">
+     <div class="restart">
+        <div class="footercum">
+          <h4><b><i>Company</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>About Us</i></b></a></li>
+             <li><a href="#"><b><i>Our Services</i></b></a></li>
+             <li><a href="#"><b><i>Privacy Policy</i></b></a></li><li>
+             <li><a href="#"><b><i>Affiliate Program</i></b></a></li>
+          </ul>
+        </div>
+        <div class="footercum">
+          <h4><b><i>Get Help</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>FAQ</i></b></a></li>
+             <li><a href="#"><b><i>Shipping</i></b></a></li>
+             <li><a href="#"><b><i>Returns</i></b></a></li>
+             <li><a href="#"><b><i>Order Status</i></b></a></li>
+             <li><a href="#"><b><i>Payment Options</i></b></a></li>
+          </ul>
+    </div>
+    <div class="footercum">
+          <h4><b><i>Online Shop</i></b></h4>
+          <ul>
+             <li><a href="home.html"><b><i> Long Frocks </i></b></a></li>
+             <li><a href="home.html"><b><i> Short Frocks </i></b></a></li>
+             <li><a href="diamond.html"><b><i> cod sets</i></b></a></li>
+             <li><a href="special.html"><b><i> Shoes </i></b> </a></li>
+             <li><a href="watches.html"><b><i>Jewellery </i></b></a></li>
+
+          </ul>
+</div>
+<div class="footercum">
+          <h4><b><i>Follow Us</i></b></h4>
+          <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+    </div>
+ </div>
+ </div>
+</section>
+
+ 
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style16.css">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+<style>
+/* Add any additional styling you need */
+</style>
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="topnav" id="myTopnav">
+    <a href="home.html">HOME</a>
+    <a href="login.html">LOGIN</a>
+    <a href="diamond.html">ABOUT US</a>
+    <a href="special.html">CATALOGUE</a>
+    <a href="cart.html">CART</a>
+    <a href="contact.html">CONTACT</a>
+    <a href="admin.html" class="active">ADMIN</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+    </a>
+</div>
+<script>
+function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+        x.className += " responsive";
+    } else {
+        x.className = "topnav";
+    }
+}
+</script>
+<div id="adminContent" style="display: none;">
+    <h2>Admin Dashboard</h2>
+    <h3>Submitted Queries</h3>
+    <ul id="queryListItems"></ul>
+    <h3>Login Statistics</h3>
+    <p id="loginCount"></p>
+    <h3>All User Login Information</h3>
+    <ul id="loginInfoList"></ul>
+</div>
+<div id="notAdmin" style="display: none;">
+    <h2>You do not have permission to view this page.</h2>
+</div>
+<script>
+var admins = ['admin@example.com']; // List of admin emails
+var loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+
+if (loggedInUser && admins.includes(loggedInUser.email)) {
+    document.getElementById('adminContent').style.display = 'block';
+    
+    // Display queries
+    var queries = JSON.parse(localStorage.getItem('queries')) || [];
+    var queryListItems = document.getElementById('queryListItems');
+    queries.forEach(query => {
+        var listItem = document.createElement('li');
+        listItem.textContent = `Name: ${query.name}, Email: ${query.email}, Subject: ${query.subject}, Message: ${query.message}`;
+        queryListItems.appendChild(listItem);
+    });
+
+    // Display login count
+    var loginCount = localStorage.getItem('loginCount') || 0;
+    document.getElementById('loginCount').textContent = `Number of user logins: ${loginCount}`;
+
+    // Display all user login information
+    var logins = JSON.parse(localStorage.getItem('logins')) || [];
+    var loginInfoList = document.getElementById('loginInfoList');
+    logins.forEach(login => {
+        var loginInfoItem = document.createElement('li');
+        loginInfoItem.textContent = `Email: ${login.email}, Password: ${login.password}`;
+        loginInfoList.appendChild(loginInfoItem);
+    });
+
+} else {
+    document.getElementById('notAdmin').style.display = 'block';
+}
+</script>
+</body>
+</html>

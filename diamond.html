@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="style16.css">
+
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+</head>
+<body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<div class="topnav" id="myTopnav">
+    <a href="home.html">HOME</a>
+    <a href="login.html">LOGIN</a>
+    <a href="diamond.html" class="active">ABOUT US</a>
+    <a href="special.html">CATALOGUE</a>
+    <a href="cart.html"> CART </a>
+    <a href="contact.html">CONTACT</a>
+    <a href="admin.html">ADMIN</a>
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+<script>
+function myFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+<section class="sub-header">
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <section class="about-us">
+        <h1 style="color: #D3B2A3" text-align:center"><font face="Comic sans MS" size="7">
+    ABOUT US</font>
+    <div class="row">
+        <div class="about-col">
+                <h5 style="color:#999"> OUR VALUES</h5>
+                <i>
+                    <p style="color:black">  As we do not own the factories that make your products, we work with carefully selected suppliers, many of which have worked with us for many years.We work hard to ensure that your products are made with respect for the environment, in good working conditions, where workers’ rights are respected</p>
+                </i></p>
+            <h5 style="color:#999"> OUR VISSION</h5>
+            <p style="color:black">Deepwear’s vision is to empower fashion designers and brands to have access to a trusted supply chain partner who can guide them, hand in hand, through the process of manufacturing high quality products in the most environmentally and socially sound manner.</p>
+            </p>
+           <a href="special.html" class="hero-btn red-btn">EXPLORE NOW</a>
+        </div>
+
+        <div class="about-col">
+            <img src="our values.jpg" height="50" width="50">
+        </div>
+    </div>
+</section>
+<section class="footer">
+   <div class="company">
+     <div class="restart">
+        <div class="footercum">
+          <h4><b><i>Company</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>About Us</i></b></a></li>
+             <li><a href="#"><b><i>Our Services</i></b></a></li>
+             <li><a href="#"><b><i>Privacy Policy</i></b></a></li><li>
+             <li><a href="#"><b><i>Affiliate Program</i></b></a></li>
+          </ul>
+        </div>
+        <div class="footercum">
+          <h4><b><i>Get Help</i></b></h4>
+          <ul>
+             <li><a href="#"><b><i>FAQ</i></b></a></li>
+             <li><a href="#"><b><i>Shipping</i></b></a></li>
+             <li><a href="#"><b><i>Returns</i></b></a></li>
+             <li><a href="#"><b><i>Order Status</i></b></a></li>
+             <li><a href="#"><b><i>Payment Options</i></b></a></li>
+          </ul>
+    </div>
+    <div class="footercum">
+          <h4><b><i>Online Shop</i></b></h4>
+          <ul>
+             <li><a href="home.html"><b><i> Long Frocks </i></b></a></li>
+             <li><a href="home.html"><b><i> Short Frocks </i></b></a></li>
+             <li><a href="diamond.html"><b><i> cod sets</i></b></a></li>
+             <li><a href="special.html"><b><i> Shoes </i></b> </a></li>
+             <li><a href="watches.html"><b><i>Jewellery </i></b></a></li>
+
+          </ul>
+</div>
+<div class="footercum">
+          <h4><b><i>Follow Us</i></b></h4>
+          <div class="social-links">
+           <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-twitter"></i></a>
+             <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+    </div>
+ </div>
+ </div>
+</section>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+</body>
+</html>
